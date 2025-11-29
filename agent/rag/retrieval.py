@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 class SimpleRetriever:
-    def __init__(self, docs_dir="docs/", top_k=3):
+    def __init__(self, docs_dir=r"E:\Projects\copilot_DSPy\docs", top_k=3):
         self.docs = []
         self.doc_ids = []
         for i, filename in enumerate(os.listdir(docs_dir)):
